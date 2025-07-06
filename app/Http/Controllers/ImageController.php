@@ -16,7 +16,7 @@ final class ImageController extends Controller
     {
         return ImageResource::collection(
             Image::latest()
-                ->paginate(10)
+                ->paginate(4)
         );
     }
 
